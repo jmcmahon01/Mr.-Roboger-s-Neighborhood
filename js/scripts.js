@@ -1,4 +1,5 @@
 function isNumber(inputNumber) {
+  const userInput = parseInt(inputNumber);
   if (typeof inputNumber !== 'number' || isNaN(inputNumber)) {
     return "Please enter a number";
   }
@@ -7,7 +8,11 @@ function isNumber(inputNumber) {
 function countToNumber() {
   let returnArray = [];
   for (let i = 0; i <= inputNumber; i++) {
-    returnArray.push(i);
+    let element = '';
+    if (i.toString().includes('1')) {
+      element = 'Beep';
+     } 
+    returnArray.push(element);
   }
   return returnArray;
 }
