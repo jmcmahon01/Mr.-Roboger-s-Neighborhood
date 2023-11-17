@@ -31,7 +31,15 @@ Or access application in web browser at:
 https://github.com/jmcmahon01/Mr.-Roboger-s-Neighborhood.git
 
 ## Tests
+Describe: isNumber()
+Test: "It will check if user input is a real number"
+code: isNumber("green")
+Expected Output: "please enter a real number"
 
+Describe: countToNumber()
+Test: "It should return an array of numbers from 0 to the user's inputted number"
+code beepBoop(5)
+Expected Output: [0, 1, 2, 3, 4, 5] 
 
 
 
