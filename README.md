@@ -45,6 +45,11 @@ Test: "It should replace numbers that contain a 1 with 'Beep'"
 code: countToNumber(1)
 Expected Output: [0, "beep"] 
 
+Test: "It should replace numbers that contain a 2 with 'Boop'"
+code: countToNumber(2)
+Expected Output: [0, "Beep", "Boop"]
+
+
 
 
 

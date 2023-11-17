@@ -11,7 +11,9 @@ function countToNumber() {
     let element = '';
     if (i.toString().includes('1')) {
       element = 'Beep';
-     } 
+    } else if (i.toString().includes('2')) {
+      element = 'Boop';
+    }
     returnArray.push(element);
   }
   return returnArray;
