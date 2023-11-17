@@ -13,6 +13,10 @@ function countToNumber() {
       element = 'Beep';
     } else if (i.toString().includes('2')) {
       element = 'Boop';
+    } else if (i.toString().includes('3')) {
+      element = "Won't you be my neighbor?";
+    } else {
+      element = i;
     }
     returnArray.push(element);
   }
