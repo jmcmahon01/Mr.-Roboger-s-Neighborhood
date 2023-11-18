@@ -53,6 +53,10 @@ Test: "It should replace numbers that contain a 3 with "Won't you be my neighbor
 Code: countToNumber(3)
 Expected Output: [0, "Beep", "Boop", "Won't you be my neighbor"]
 
+Test: " It should create a hierarchy of substitution so if return index includes a '3' it will only show that substitution. Than for '2', than for '1'. 
+code: countToNumber(13)
+Expected Output: [0,"Beep", "Boop", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep", "Beep", "Boop", "Won't you be my neighbor"]
+
 
 
 
