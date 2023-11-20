@@ -26,6 +26,7 @@ window.addEventListener("load", function () {
   const form = document.querySelector("form");
   const mrRodgers = document.getElementById("mrRodgers");
   const resultP = document.getElementById("resultP");
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const inputNumber = document.getElementById("inputNumber").value;
@@ -33,6 +34,7 @@ window.addEventListener("load", function () {
     const returnArray = countToNumber(parseInt(inputNumber));
     if (errorMessage) {
       document.getElementById("error").removeAttribute("class");
+      document.getElementById("mrRodgers").setAttribute("hidden");
     } else if (returnArray) {
       resultP.textContent += ' ' + returnArray.join(', ');
       mrRodgers.removeAttribute("class");
@@ -41,9 +43,8 @@ window.addEventListener("load", function () {
   const resetButton = document.getElementById("resetButton");
   resetButton.addEventListener("click", function () {
     document.getElementById("inputNumber").value = '';
-    resultP.textContent = '';
     mrRodgers.classList.add("hidden");
-    document.getElementById("error").classList.add("hidden");
+    document.getElementById("error").classList.add("hidden");;
   });
 });
 
