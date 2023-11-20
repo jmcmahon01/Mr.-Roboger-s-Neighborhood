@@ -36,13 +36,14 @@ window.addEventListener("load", function () {
       document.getElementById("error").removeAttribute("class");
       document.getElementById("mrRodgers").setAttribute("hidden");
     } else if (returnArray) {
-      resultP.textContent += ' ' + returnArray.join(', ');
+      resultP.textContent = "I... AM.... Mr. RODGERS... BEEP BOOP BEEP. I... CAN... COUNT.... TO YOUR... NUMBER: " + returnArray.join(', ');
       mrRodgers.removeAttribute("class");
     }
   });
   const resetButton = document.getElementById("resetButton");
   resetButton.addEventListener("click", function () {
     document.getElementById("inputNumber").value = '';
+    resultP.textContent = '';
     mrRodgers.classList.add("hidden");
     document.getElementById("error").classList.add("hidden");;
   });
