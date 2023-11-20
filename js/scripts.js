@@ -4,7 +4,6 @@ function isNumber(inputNumber) {
     return "Please enter a number";
   }
 }
-
 function countToNumber(inputNumber) {
   let returnArray = [];
   for (let i = 0; i <= inputNumber; i++) {
@@ -22,7 +21,7 @@ function countToNumber(inputNumber) {
   }
   return returnArray;
 }
-
+//UI Logic
 window.addEventListener("load", function () {
   const form = document.querySelector("form");
   const mrRodgers = document.getElementById("mrRodgers");
@@ -39,7 +38,15 @@ window.addEventListener("load", function () {
       mrRodgers.removeAttribute("class");
     }
   });
+  const resetButton = document.getElementById("resetButton");
+  resetButton.addEventListener("click", function () {
+    document.getElementById("inputNumber").value = '';
+    resultP.textContent = '';
+    mrRodgers.classList.add("hidden");
+    document.getElementById("error").classList.add("hidden");
+  });
 });
+
 
 
 
